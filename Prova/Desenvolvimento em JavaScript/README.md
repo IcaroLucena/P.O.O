@@ -1,0 +1,1 @@
+Mesmas funcionalidades de PHP, só que agora desenvolvido com JavaScript

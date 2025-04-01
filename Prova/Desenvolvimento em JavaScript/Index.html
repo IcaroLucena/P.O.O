@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Concessionária Toyota</title>
+    <script type="module" src="Main.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef;
+            text-align: center;
+            padding: 50px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #resultado {
+            margin-top: 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            min-height: 100px;
+        }
+        #interface {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Concessionária Toyota</h1>
+
+    <!-- Botão Iniciar -->
+    <button id="iniciar">Iniciar</button>
+
+    <!-- Interface oculta que será exibida após iniciar -->
+    <div id="interface">
+        <button id="concessionariaFala">Concessionária fala</button>
+        <button id="veiculoFala">Veículo fala</button>
+        <button id="trocarNomeConcessionaria">Trocar nome da Concessionária</button>
+        <button id="trocarNomeVeiculo">Trocar nome do Veículo</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        // Ao clicar em "Iniciar", exibe a interface e oculta o botão Iniciar.
+        document.getElementById("iniciar").addEventListener("click", () => {
+            document.getElementById("iniciar").style.display = "none";
+            document.getElementById("interface").style.display = "block";
+        });
+    </script>
+
+</body>
+</html>
